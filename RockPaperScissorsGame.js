@@ -54,11 +54,11 @@ const getUserChoice = userInput =>{
   
   
   const playGame = () =>{
-    let userChoice = getUserChoice('bomb');
+    let userChoice = getUserChoice('scissors');
     let computerChoice = getComputerChoice();
     console.log('You threw: ' + userChoice)
     console.log('The computer threw: ' + computerChoice);
     console.log(determineWinner(userChoice, computerChoice))
   }
 
-console.log(playGame())
+playGame();
